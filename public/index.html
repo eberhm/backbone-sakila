@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Backbone test app for sakila db</title>
+
+    <script type="text/javascript" src="scripts/jquery/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="scripts/underscore/underscore.js"></script>
+    <script type="text/javascript" src="scripts/backbone/backbone.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" data-main="scripts/src/main.js" src="scripts/requirejs/require.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="row-fluid">
+    <div class="span4">
+        <div id="app_filmForm"></div>
+        <a href="#films/save" class="btn  btn-primary">Save current</a>
+    </div>
+    <div class="span6">
+        <table id="app_filmsTable" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Release Year</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <a href="#films/add" class="btn">Add film</a>
+        <a href="#films/search/?all" class="btn">Load all films</a>
+    </div>
+    </div>
+
+<!-- templates -->
+
+<script type="text/tpl" id="app_filmsForm_tpl">
+    <form name="filmForm" class="well form-horizontal">
+        <h3>Edit Film</h3>
+        <div class="control-group">
+            <label class="control-label">Id: </label><input type="text" name="film_id" value="<%=film_id%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Title: </label><input type="text" name="title" value="<%=title%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Description: </label><input type="text" name="description" value="<%=description%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Release Year: </label><input type="text" name="release_year" value="<%=release_year%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Language Id: </label><input type="text" name="language_id" value="<%=language_id%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Original Language Id: </label><input type="text" name="original_language_id" value="<%=original_language_id%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Rental Duration: </label><input type="text" name="rental_duration" value="<%=rental_duration%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Rental Rate: </label><input type="text" name="rental_rate" value="<%=rental_rate%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Length: </label><input type="text" name="length" value="<%=length%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Replacement Cost: </label><input type="text" name="replacement_cost" value="<%=replacement_cost%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Rating: </label><input type="text" name="rating" value="<%=rating%>"/>
+        </div>
+        <div class="control-group">
+        <label class="control-label">Special Features: </label><input type="text" name="special_features" value="<%=special_features%>"/>
+        </div>
+    </form>
+</script>
+<script type="text/tpl" id="app_filmsTableRow_tpl">
+        <tr>
+            <td><%=film_id%></td>
+            <td><%=title%></td>
+            <td><%=release_year%></td>
+            <td><%=language_id%></td>
+            <td>
+                <a href="#films/edit/<%=film_id%>" class="btn btn-info">Edit</a>
+                <a href="#films/remove/<%=film_id%>" class="btn btn-danger">Remove</a>
+            </td>
+        </tr>
+</script>
+
+
+</body>
+</html>

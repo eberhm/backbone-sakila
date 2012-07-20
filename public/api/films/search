@@ -1,0 +1,72 @@
+[
+{
+    "film_id" : 23,
+    "title" : "test title 23",
+    "description" : "test description 23",
+    "release_year" : "1977",
+    "language_id" : "EN",
+    "original_language_id" : "1",
+    "rental_duration" : "2",
+    "rental_rate" : "1",
+    "length" : "150",
+    "replacement_cost" : "12.00",
+    "rating" : "G",
+    "special_features" : null
+},
+{
+    "film_id" : 24,
+    "title" : "test title 24",
+    "description" : "test description 24",
+    "release_year" : "1978",
+    "language_id" : "ES",
+    "original_language_id" : "1",
+    "rental_duration" : "2",
+    "rental_rate" : "1",
+    "length" : "150",
+    "replacement_cost" : "12.00",
+    "rating" : "G",
+    "special_features" : null
+},
+{
+    "film_id" : 25,
+    "title" : "test title 25",
+    "description" : "test description 25",
+    "release_year" : "1979",
+    "language_id" : "FR",
+    "original_language_id" : "1",
+    "rental_duration" : "2",
+    "rental_rate" : "1",
+    "length" : "150",
+    "replacement_cost" : "12.00",
+    "rating" : "G",
+    "special_features" : null
+},
+{
+    "film_id" : 26,
+    "title" : "test title 26",
+    "description" : "test description 26",
+    "release_year" : "1977",
+    "language_id" : "DE",
+    "original_language_id" : "1",
+    "rental_duration" : "2",
+    "rental_rate" : "1",
+    "length" : "150",
+    "replacement_cost" : "12.00",
+    "rating" : "G",
+    "special_features" : null
+},
+{
+    "film_id" : 27,
+    "title" : "test title 27",
+    "description" : "test description 27",
+    "release_year" : "1987",
+    "language_id" : "JP",
+    "original_language_id" : "1",
+    "rental_duration" : "2",
+    "rental_rate" : "1",
+    "length" : "150",
+    "replacement_cost" : "12.00",
+    "rating" : "G",
+    "special_features" : null
+}
+]
